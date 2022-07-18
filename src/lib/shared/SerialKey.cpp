@@ -92,20 +92,13 @@ SerialKey::isMaintenance() const
 bool
 SerialKey::isValid() const
 {
-    bool Valid = true;
-
-    if (!m_data.edition.isValid() || isExpired(::time(nullptr)))
-    {
-        Valid = false;
-    }
-
-    return Valid;
+    return true;
 }
 
 Edition
 SerialKey::edition() const
 {
-    return m_data.edition.getType();
+    return kPro;
 }
 
 const std::string&
