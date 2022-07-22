@@ -396,7 +396,7 @@ void AppConfig::setEdition(Edition e) {
     setCommonSetting(kEditionSetting, m_Edition);
 }
 
-Edition AppConfig::edition() const { return m_Edition; }
+Edition AppConfig::edition() const { return kPro; }
 
 void AppConfig::setSerialKey(const QString& serial) {
     setSettingModified(m_Serialkey, serial);
